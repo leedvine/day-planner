@@ -30,6 +30,17 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+<!-- Created a row and split in to 3 colums of different sizes using bootstrap(12 columns). The first column will contain the hour and
+only spans 2 columns of the 12. The second spans 9 columns and will be where the user can input data. The 3rd colum is for the button 
+and again spans 2 of bootstraps 12 columns.  Utilising the stylesheet I have matched class names to match already existing css.  -->
+        <div class='row time-block'>
+            <div class="hour col-2">
+              9am
+              </div>
+              <!-- Below I have given the text area and the button unique id's so I can target them based on time criteria -->
+            <textarea class="col-9 description" id='time9am'><!-- Inputted data will store within this div using JS               --></textarea>
+            <button class="col-1 saveBtn" id="btn9am"></button>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
