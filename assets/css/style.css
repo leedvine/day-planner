@@ -21,6 +21,16 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+#past-block, #present-block { 
+  text-align: center;
+}
+
+#future-block {
+  margin-bottom: 50px;
+    text-align: center;
+}
+
+
 .description {
   white-space: pre-wrap;
 }

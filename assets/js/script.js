@@ -1,25 +1,68 @@
-// constiables connecting to ID's in index.html using JQuery
-    
-const hour9 = $("#plan9");
-const hour10 = $("#plan10");
-const hour11 = $("#plan11");
-const hour12 = $("#plan12");
-const hour13 = $("##plan13");
-const hour14 = $("#plan14");
-const hour15 = $("#plan15");
-const hour16 = $("#plan16");
-const hour17 = $("#plan17");
 
 // Variable for moment() to control date format
-const time = moment();
+let time = moment();
+
 
 
 // Add date and (as an extra) current time to top of the page
 // Used moment to execute format and setInterval to run every second so time display is accurate to the second
 
-setInterval(
-    function () {
-        $("#currentDay").text(moment().format("DDD MMM, YYYY - HH:mm:ss"))
+setInterval(function () {
+  $("#currentDay").text(moment().format("DDD MMM, YYYY - HH:mm:ss"));
+}, 1000);
 
-    }, 1000)
+//Loop through each time-block and retrieve ID stored in local storage
+function setPlanner() {
 
+
+  //clear previously held local storage before generating new
+  localStorage.clear();
+
+  $(".time-block").each(function () {
+    let id = $(this).attr("id");
+    let description = localStorage.getItem(id);
+
+    if (description !== null) {
+      $(this).children(".description").val(description);
+    }
+  });
+}
+
+//Run set planner function
+setPlanner();
+
+
+//Designate variable to save button and on clicking the save button store data via ID in to local storage
+
+let saveBtn = $(".saveBtn");
+
+saveBtn.on("click", function () {
+  let time = $(this).parent().attr("id");
+  let description = $(this).siblings(".description").val();
+
+  localStorage.setItem(time, description);
+});
+
+// Create function to check time and assign class dependednt on current time
+// If the hour assigned has gone then assign .past
+// If within that hour then assign .present
+// If that hour has yet to arrive then assign future
+
+function pastPresentFuture() {
+  hour = time.hours();
+  $(".time-block").each(function () {
+    let thisHour = parseInt($(this).attr("id"));
+
+    if (thisHour > hour) {
+      $(this).addClass("future");
+    } else if (thisHour === hour) {
+      $(this).addClass("present");
+    } else {
+      $(this).addClass("past");
+    }
+  });
+}
+
+// Run pastPresentFuture function
+
+pastPresentFuture();

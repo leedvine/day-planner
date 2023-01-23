@@ -19,94 +19,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Work Day descriptionr</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Work Day descriptionr</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-<!-- Created a row and split in to 3 colums of different sizes using bootstrap(12 columns). The first column will contain the hour and
-only spans 2 columns of the 12. The second spans 9 columns and will be where the user can input data. The 3rd colum is for the button 
-and again spans 2 of bootstraps 12 columns.  Utilising the stylesheet I have matched class names to match already existing css.  -->
-        <div class='row time-block'>
-            <div class="hour col-2">
-              9am
-              </div>
-              <!-- Below I have given the text area and the button unique id's so I can target them based on time criteria -->
 
-            <textarea class="col-9 description" id='plan9'></textarea>
-            <button class="col-1 saveBtn fa fa-save" id="btn9"></button>
-        </div>
-        <!-- Copied the above row and pasted it for each hour of the 9am to 5pm remaining. ID of the text areas and buttons updated
-        to be applicable to that particular hour -->
-        <div class='row time-block'>
-          <div class="hour col-2">
-            10am
-            </div>
-            
-          <textarea class="col-9 description"  id='plan10'></textarea>
-          <button class="col-1 saveBtn fa fa-save" id="btn10"></button>
+<!-- Explainer of time/colour scheme -->
+
+<p id="past-block"><span style="margin-right: 20px;"><img src="./assets/images/grey.png"></span>Indicates an hour already in the past</p>
+<p id="present-block"><span style="margin-right: 20px;"><img src="./assets/images/red.png"></span>Indicates the existing hour</p>
+<p id="future-block"><span style="margin-right: 20px;"><img src="./assets/images/green.png"></span>Indicates a future hour</p>
+
+      <!-- Timeblocks go here -->
+
+      <!-- Created a row and split in to 3 colums of different sizes using bootstrap(12 columns). The first column will contain the hour and
+only spans 2 columns of the 12. The second spans 9 columns and will be where the user can input data. The 3rd colum is for the button 
+and again spans 2 of bootstraps 12 columns.  On smaller screens this changes to allow visuals to display properly  -->
+
+      <div class="row time-block" id="9">
+        <div class="col-1 hour">9 AM</div>
+
+        <!-- Below I have given the text area unique class of description so I can target them based on time criteria -->
+
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
       </div>
-      <div class='row time-block'>
-        <div class="hour col-2">
-          11am
-          </div>
-          
-        <textarea class="col-9 description"  id='plan11'></textarea>
-        <button class="col-1 saveBtn fa fa-save" id="btn11"></button>
-    </div>
-    <div class='row time-block'>
-      <div class="hour col-2">
-        12pm
-        </div>
-        
-      <textarea class="col-9 description"  id='plan12'></textarea>
-      <button class="col-1 saveBtn fa fa-save" id="btn12"></button>
-  </div>
-  <div class='row time-block'>
-    <div class="hour col-2">
-      1pm
+
+      <!-- Copied the above row and pasted it for each hour of the 9am to 5pm (9 to 17) remaining. -->
+
+      <div class="row time-block" id="10">
+        <div class="col-1 hour">10 AM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
       </div>
-      
-    <textarea class="col-9 description"  id='plan13'></textarea>
-    <button class="col-1 saveBtn fa fa-save" id="btn13"></button>
-</div>
-<div class='row time-block'>
-  <div class="hour col-2">
-    2pm
-    </div>
-    
-  <textarea class="col-9 description"  id='plan14'></textarea>
-  <button class="col-1 saveBtn fa fa-save" id="btn14"></button>
-</div>
-<div class='row time-block'>
-  <div class="hour col-2">
-    3pm
-    </div>
-    
-  <textarea class="col-9 description"  id='plan15'></textarea>
-  <button class="col-1 saveBtn fa fa-save" id="btn15"></button>
-</div>
-<div class='row time-block'>
-  <div class="hour col-2">
-    4pm
-    </div>
-    
-  <textarea class="col-9 description"  id='plan16'></textarea>
-  <button class="col-1 saveBtn fa fa-save" id="btn16"></button>
-</div>
-<div class='row time-block'>
-  <div class="hour col-2">
-    5pm
-    </div>
-   
-    <textarea class="col-9 description"  id='plan17'></textarea>
-  <button class="col-1 saveBtn fa fa-save" id="bt1=n17"></button>
+      <div class="row time-block" id="11">
+        <div class="col-1 hour">11 AM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="12">
+        <div class="col-1 hour">12 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="13">
+        <div class="col-1 hour">1 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="14">
+        <div class="col-1 hour">2 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="15">
+        <div class="col-1 hour">3 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="16">
+        <div class="col-1 hour">4 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
+      <div class="row time-block" id="17">
+        <div class="col-1 hour">5 PM</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="col-1 saveBtn fa fa-save"></button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
