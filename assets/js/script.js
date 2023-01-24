@@ -1,5 +1,5 @@
 
-// Variable for moment() to control date format
+// Variable for time to use moment.js to control date/time format
 let time = moment();
 
 
