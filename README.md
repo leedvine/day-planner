@@ -7,21 +7,17 @@ Use the [Moment.js](https://momentjs.com/) library to work with date and time. t
 Make the page responsive and functional across screen sizes.
 
 
-### Screenshot showing example of what user presented with
+### Screenshot showing initial screen with date and time on display
 
-![](./assets/images/start-screen.jpg)
+![](./assets/images/Screenshot%202023-01-24%20at%2023.02.56.png)
 <br><br>
 
-### Screenshot showing prompt
-![](./assets/images/prompt.jpg)
+### Screenshot showing various inputs and color schem of past, present and future hours
+![](./assets/images/Screenshot%202023-01-25%20at%2011.07.39.png)
 <br><br>
 
-### Screenshot showing alert
-![](./assets/images/alert.jpg)
-<br><br>
-
-### Screenshot showing final example of result expected
-![](./assets/images/result.jpg)
+### Screenshot showing same page in responsive mode on smaller screens
+![](./assets/images/Screenshot%202023-01-25%20at%2011.09.06.png)
 <br><br>
 
 ### Links
