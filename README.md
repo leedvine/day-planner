@@ -1,87 +1,71 @@
-# Third-Party APIs: Work Day Scheduler
-
-## Your Task
+## Overview
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+Use the [Moment.js](https://momentjs.com/) library to work with date and time. to display the date but also to determine the current hour and style the page accordingly based on this.
 
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-The app should:
-
-* Display the current day at the top of the calender when a user opens the planner.
- 
-* Present timeblocks for standard business hours when the user scrolls down.
- 
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
- 
-* Allow a user to enter an event when they click a timeblock
-
-* Save the event in local storage when the save button is clicked in that timeblock.
-
-* Persist events between refreshes of a page
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+Make the page responsive and functional across screen sizes.
 
 
-## Grading Requirements
+### Screenshot showing example of what user presented with
 
-This homework is graded based on the following criteria: 
+![](./assets/images/start-screen.jpg)
+<br><br>
 
-### Technical Acceptance Criteria: 40%
+### Screenshot showing prompt
+![](./assets/images/prompt.jpg)
+<br><br>
 
-* Satisfies all of the above acceptance criteria plus the following:
+### Screenshot showing alert
+![](./assets/images/alert.jpg)
+<br><br>
 
-  * Uses a date utility library to work with date and time
+### Screenshot showing final example of result expected
+![](./assets/images/result.jpg)
+<br><br>
 
-### Deployment: 32%
+### Links
 
-* Application deployed at live URL
+- Repo URL: https://github.com/leedvine/day-planner
+<br><br>
+- Live Site URL: https://leedvine.github.io/day-planner/
 
-* Application loads with no errors
+## My process
 
-* Application GitHub URL submitted
+### Built with
 
-* GitHub repo contains application code
+- Use of Javascript, jQuery, moments.js, CSS (including Bootstrap) and HTML
+<br><br>
+### What I learned
 
-### Application Quality: 15%
+jQuery enables a quicker write time in regards to Javascript
+<br><br>
+jQuery was introduced to work across all major browsers
+<br><br>
+jQuery compresses the most common JavaScript actions into fewer lines of code
+<br>
+moments.js is a great way to deal with times and dates
 
-* Application user experience is intuitive and easy to navigate
+<br><br>
+### Useful resources
+<br><br>
+http://jqfundamentals.com/
+<br><br>
+https://www.w3schools.com/jquery/jquery_css_classes.asp
+<br><br>
+https://momentjs.com/
+<br><br>
+## Author
+  Lee Vine
+- GitHub - https://github.com/leedvine
 
-* Application user interface style is clean and polished
+## Installation
 
-* Application resembles the mock-up functionality provided in the homework instructions
+Simplest way to view the project is on GitHub pages here https://leedvine.github.io/day-planner/
 
-### Repository Quality: 13%
+You can also download the files to your local environment from Github here https://github.com/leedvine/day-planner and right click the index file to open in browser.
 
-* Repository has a unique name
+It is also possible to download from the above link and instal on any hosting owned by yourself. Note this should only be done on unused / clean hosting account 
 
-* Repository follows best practices for file structure and naming conventions
+Installing in folders with the same name here can overwrite your existing files.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
