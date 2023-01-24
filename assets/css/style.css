@@ -46,6 +46,12 @@ textarea {
   border-top: 1px solid white;
 }
 
+@media only screen and (max-width: 768px) {
+.row {
+  margin-bottom: 50px;
+}
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
