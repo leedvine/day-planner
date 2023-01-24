@@ -46,12 +46,6 @@ textarea {
   border-top: 1px solid white;
 }
 
-@media only screen and (max-width: 768px) {
-.row {
-  margin-bottom: 50px;
-}
-}
-
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -82,7 +76,27 @@ textarea {
   font-size: 24px;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
+  background-color: #d50606;
   transition: all 0.3s ease-in-out;
 }
+
+@media only screen and (max-width: 575px) {
+  .row {
+    margin-bottom: 70px;
+  }
+  .hour {
+    padding: 10px 0;
+  }
+  .saveBtn {
+    font-size: 20px;
+    padding: 10px 0;
+    width: 100%;
+  border-radius: 0;
+  box-sizing: border-box;
+  }
+  .saveBtn:hover {
+    font-size: 18px;
+  }
+  }
